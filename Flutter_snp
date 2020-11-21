@@ -1,0 +1,60 @@
+Color bkColor = Color(0xff2B2D5D);
+Color pkColor = Color(0xffF84968);
+Color yeColor = Color(0xffF6BF26);
+=============================
+
+Flutter Snp
+============
+"Size Box Height": {
+		"prefix": "sizeh",
+		"body": [
+			"SizedBox( height: $1),",
+			
+		],
+		"description": "Sized Box Height Only"
+	},
+
+	"Size Box width": {
+		"prefix": "sizew",
+		"body": [
+			"SizedBox( width: $1),",
+			
+		],
+		"description": "Sized Box width Only"
+	},
+
+	"Text Sytle": {
+		"prefix": "tsty",
+		"body": [
+			"TextStyle( color: Colors.$1,fontSize:$2)",
+			
+		],
+		"description": "Text Sytle"
+	},
+
+	"PlatForm Overlay": {
+		"prefix": "pover",
+		"body": [
+			" if (Platform.isAndroid)SystemChrome.setEnabledSystemUIOverlays([SystemUiOverlay.top]);var overlayStyle = SystemUiOverlayStyle(statusBarColor: Colors.$1,);SystemChrome.setSystemUIOverlayStyle(overlayStyle);",
+			
+		],
+		"description": "Text Sytle"
+	},
+
+	"Card ListTile": {
+		"prefix": "cardList",
+		"body": [
+			"Card(child: Column( mainAxisSize: MainAxisSize.min,children: <Widget>[const ListTile( leading: Icon(Icons.album, size: 50),title: Text('$1'), subtitle: Text('$2'),),],),)",
+			
+		],
+		"description": "Text Sytle"
+	},
+
+	"Text & TextStyle": {
+		"prefix": "textstyle",
+		"body": [
+			" Text('$1' , style: TextStyle( color: Colors.$2,fontSize:$3),),",
+			
+		],
+		"description": "Text and Sytle"
+	}
